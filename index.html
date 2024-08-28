@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main>
+        <div class="pagina">
+            <header>
+                Decodificador de texto
+            </header>
+            <div class="conteudo">
+                <textarea class="caixa__texto" placeholder="Digite sua mensagem" minlength="30" maxlength="50" rows="0"
+                    cols="0" id="#textoUsuario"></textarea>
+                <div class="alerta">
+                    <img src="assets/Info.png" alt="Exclamação" width="16" height="16" />
+                    <span>Apenas letras minúsculas e sem acento</span>
+                </div>
+                <div class="area__botao">
+                    <button onclick="criptografar()" class="botao">Criptografar</button>
+                    <button onclick="descriptografar()" class="botao">Descriptografar</button>
+                </div>
+            </div>
+           <div id="#outputContainer">
+           </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Silvia Medeiros</p>
+
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>
